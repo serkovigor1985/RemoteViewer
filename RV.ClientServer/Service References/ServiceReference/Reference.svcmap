@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="98a66eb7-f585-402a-b694-8a322b2bfa8b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10080/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item4.xsd" MetadataType="Schema" ID="d0e5a8e2-bdea-4fe3-9396-4a78fd74ce75" SourceId="1" SourceUrl="http://cmd18:10080/?xsd=xsd0" />
+    <MetadataFile FileName="item41.xsd" MetadataType="Schema" ID="fbdc9f65-783b-4aea-98c2-6c39fdb61132" SourceId="1" SourceUrl="http://cmd18:10080/?xsd=xsd4" />
+    <MetadataFile FileName="item42.xsd" MetadataType="Schema" ID="3af0bd26-f29f-429a-ac11-ba9bc759042e" SourceId="1" SourceUrl="http://cmd18:10080/?xsd=xsd3" />
+    <MetadataFile FileName="item43.xsd" MetadataType="Schema" ID="b1155806-a3bc-4ff4-8263-55d99bbb53c6" SourceId="1" SourceUrl="http://cmd18:10080/?xsd=xsd1" />
+    <MetadataFile FileName="RemoteService1.wsdl" MetadataType="Wsdl" ID="6e6e19cc-eaa7-4604-8ac2-3ba6ab407bd4" SourceId="1" SourceUrl="http://cmd18:10080/?wsdl" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="314af5c8-9e61-422f-a670-34d9ff2c6e75" SourceId="1" SourceUrl="http://cmd18:10080/?disco" />
+    <MetadataFile FileName="item45.xsd" MetadataType="Schema" ID="8a0f1e07-25ed-4cb0-b356-076c654e7ac7" SourceId="1" SourceUrl="http://cmd18:10080/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

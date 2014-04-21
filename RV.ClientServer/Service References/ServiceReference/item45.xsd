@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RV.ClientServer.Server" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RV.ClientServer.Server" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://cmd18:10080/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://cmd18:10080/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ServiceException">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="InnerException" nillable="true" type="q1:Exception" />
+      <xs:element minOccurs="0" name="ExceptionType" type="tns:ServiceExceptionType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceException" nillable="true" type="tns:ServiceException" />
+  <xs:simpleType name="ServiceExceptionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Login" />
+      <xs:enumeration value="UpdateScreen" />
+      <xs:enumeration value="UpdateCursor" />
+      <xs:enumeration value="Logout" />
+      <xs:enumeration value="CheckDllVersion" />
+      <xs:enumeration value="DllUpdate" />
+      <xs:enumeration value="Default">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ServiceExceptionType" nillable="true" type="tns:ServiceExceptionType" />
+  <xs:complexType name="WindowData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Top" type="xs:int" />
+      <xs:element minOccurs="0" name="Bottom" type="xs:int" />
+      <xs:element minOccurs="0" name="Left" type="xs:int" />
+      <xs:element minOccurs="0" name="Right" type="xs:int" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WindowData" nillable="true" type="tns:WindowData" />
+  <xs:complexType name="CursorData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="X" type="xs:int" />
+      <xs:element minOccurs="0" name="Y" type="xs:int" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CursorData" nillable="true" type="tns:CursorData" />
+</xs:schema>

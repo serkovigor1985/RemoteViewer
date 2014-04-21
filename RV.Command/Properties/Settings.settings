@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RV.Command.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AssemblyName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RV.UserInterface</Value>
+    </Setting>
+    <Setting Name="TypeName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RV.UserInterface.Contoller.GuiController</Value>
+    </Setting>
+    <Setting Name="BackupFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\RemoteViewer\RV.Command\bin\Debug\backup</Value>
+    </Setting>
+    <Setting Name="UpdateFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\RemoteViewer\RV.Command\bin\Debug\update</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
